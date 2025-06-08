@@ -1,20 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   background-color: hsl(47, 88%, 63%);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Figtree',sans-serif;
+  height: 100vh;
+  
 }
 
 .card{
-   width: 90%;
+   /* width: 90%; */
   max-width: 375px;
   margin: auto;
   padding: 16px;
   border-radius: 12px;
   background-color: white;
-  display: flex;
-  flex-direction: column;
+  
+  /* display: flex;
+  flex-direction: column; */
   
 }
 
@@ -24,20 +33,24 @@ body{
     display: flex;
     flex-direction: row; /* e.g., image on the left, text on the right */
     padding: 24px;
+    
   }
 
   .card img {
     width: 50%;
     border-radius: 12px;
+    margin-bottom: 16px;
   }
 
   .card-content {
     padding-left: 24px;
+    
   }
 }
 
 .card img{
   border-radius: 12px;
+  margin-bottom: 16px;
 }
 
 .heading{
@@ -47,12 +60,15 @@ body{
   border-radius: 6px;
   font-weight: 800;
   display: inline-block;
+  margin-bottom: 16px;
 }
 
 .course{
   font-weight: 800;
   cursor: pointer;
   transition: color 0.3s ease;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .course:hover{
@@ -61,5 +77,19 @@ body{
 
 .description{
   color: hsl(0, 0%, 42%);
+  margin-bottom: 16px;
 }
+
+.author{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+
+
+/* .card p{
+  margin-bottom: 16px;
+} */
 
