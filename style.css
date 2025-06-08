@@ -1,0 +1,65 @@
+body{
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Figtree',sans-serif;
+}
+
+.card{
+   width: 90%;
+  max-width: 375px;
+  margin: auto;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+@media (min-width: 1440px) {
+  .card {
+    max-width: 700px; /* or whatever suits the design */
+    display: flex;
+    flex-direction: row; /* e.g., image on the left, text on the right */
+    padding: 24px;
+  }
+
+  .card img {
+    width: 50%;
+    border-radius: 12px;
+  }
+
+  .card-content {
+    padding-left: 24px;
+  }
+}
+
+.card img{
+  border-radius: 12px;
+}
+
+.heading{
+  background-color: hsl(47, 88%, 63%);
+  color: black; /* optional for better contrast */
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.course{
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.course:hover{
+  color:hsl(47, 88%, 63%);
+}
+
+.description{
+  color: hsl(0, 0%, 42%);
+}
+
